@@ -107,8 +107,7 @@ public class DataRegistro {
 				Variables.hrs = rs.getString(4);
 				Variables.fecha = rs.getString(5);
 
-				System.out.println(Variables.ncon + " " + Variables.nom + " " + Variables.hre + " " + Variables.hrs
-						+ " " + Variables.fecha);
+				
 			}
 		} catch (SQLException e) {
 
@@ -125,8 +124,8 @@ public class DataRegistro {
 				if (cn != null) {
 					cn.close();
 				}
-			} catch (Exception e2) {
-				// TODO: handle exception
+			} catch (Exception e) {
+
 			}
 		}
 		return var;
